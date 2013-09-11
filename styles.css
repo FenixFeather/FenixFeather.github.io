@@ -1,4 +1,4 @@
-div.ex
+div.box
 {
 width:220px;
 padding:10px;
@@ -7,18 +7,21 @@ margin:auto;
 text-align:center;
 background-color:white;
 font-family:"Ubuntu","Calibri","sans-serif";
-box-shadow: 8px 8px 8px rgba(0,0,0,.1);
+box-shadow: 8px 8px 8px rgba(0,0,0,.3);
 }
+
 body
 {
 background-color:#4ca8ff;
 }
+
 h1
 {
 color:black;
 font-family:"Ubuntu","Calibri","sans-serif";
 text-align:center;
 }
+
 p
 {
 font-family:"Ubuntu","Calibri","sans-serif";
