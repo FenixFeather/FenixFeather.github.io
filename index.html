@@ -6,17 +6,39 @@
 		<title>Thomas Liu</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel=icon sizes="16x16 32x32 64x64 128x128 256x256" href="favicon.ico" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+		<script>
+			$(document).ready(function(){
+			  $("#aboutTab").click(function(){
+				$("#homeText").hide();
+				$("#aboutText").show();
+				$("#contactText").hide();
+			  });
+			  $("#homeTab").click(function(){
+				$("#aboutText").hide();
+				$("#homeText").show();
+				$("#contactText").hide();
+			  });
+			  $("#contactTab").click(function(){
+				$("#aboutText").hide();
+				$("#homeText").hide();
+				$("#contactText").show();
+			  });
+			});
+</script>
 	</head>
 	
 	<!--Body of the webpage-->
 	<body>
 		<div class="container" style="width:550px">
 			<h1>Hello world!</h1>
-				<a href="http://en.wikipedia.org"><div class="tab">Home</div></a> <div class="tab">About</div> <div class="tab">Contact</div>
+				<a href="#"><div id="homeTab" class="tab">Home</div></a> <a href="#"><div class="tab" id="aboutTab">About</div></a> <a href="#"><div id="contactTab" class="tab">Contact</div></a>
 					<div style="clear:both"> </div>
 					<div class="box">
 						<h1>Thomas Liu</h1>
-							<p>Hi.</p>
+							<p id="homeText">Hi.</p>
+							<p style="display:none" id="aboutText">Hi world.</p>
+							<p style="display:none" id="contactText">tfliu@tfliu.com</p>
 					</div>
 				</div>
 	</body>
