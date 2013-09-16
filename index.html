@@ -11,18 +11,28 @@
 			$(document).ready(function(){
 			  $("#aboutTab").click(function(){
 				$("#homeText").hide();
-				$("#aboutText").show();
+				//$("#homeTab").css({"text-decoration":"none"});
+				$("#homeTab").css({"font-weight":"normal"});
+				$("#aboutText").slideDown();
 				$("#contactText").hide();
+				$("#contactTab").css({"font-weight":"normal"});
+				$(this).css({"font-weight":"bold"});
 			  });
 			  $("#homeTab").click(function(){
 				$("#aboutText").hide();
-				$("#homeText").show();
+				$("#aboutTab").css({"font-weight":"normal"});
+				$("#homeText").slideDown();
 				$("#contactText").hide();
+				$("#contactTab").css({"font-weight":"normal"});
+				$(this).css({"font-weight":"bold"});
 			  });
 			  $("#contactTab").click(function(){
 				$("#aboutText").hide();
+				$("#aboutTab").css({"font-weight":"normal"});
 				$("#homeText").hide();
-				$("#contactText").show();
+				$("#homeTab").css({"font-weight":"normal"});
+				$("#contactText").slideDown();
+				$(this).css({"font-weight":"bold"});
 			  });
 			});
 </script>
@@ -32,7 +42,7 @@
 	<body>
 		<div class="container" style="width:550px">
 			<h1>Hello world!</h1>
-				<a href="#"><div id="homeTab" class="tab">Home</div></a> <a href="#"><div class="tab" id="aboutTab">About</div></a> <a href="#"><div id="contactTab" class="tab">Contact</div></a>
+				<a href="#"><div style="font-weight:bold" id="homeTab" class="tab">Home</div></a> <a href="#"><div class="tab" id="aboutTab">About</div></a> <a href="#"><div id="contactTab" class="tab">Contact</div></a>
 					<div style="clear:both"> </div>
 					<div class="box">
 						<h1>Thomas Liu</h1>
