@@ -6,6 +6,7 @@ $(document).ready(function(){
         $("#aboutText").slideDown();
         $("#contactText").hide();
         $("#contactTab").css({"font-weight":"normal"});
+        $("#title").text("About");
         $(this).css({"font-weight":"bold"});
         });
     $("#homeTab").click(function(){
@@ -14,6 +15,7 @@ $(document).ready(function(){
         $("#homeText").slideDown();
         $("#contactText").hide();
         $("#contactTab").css({"font-weight":"normal"});
+        $("#title").text("Hello World!");
         $(this).css({"font-weight":"bold"});
         });
     $("#contactTab").click(function(){
@@ -22,6 +24,7 @@ $(document).ready(function(){
         $("#homeText").hide();
         $("#homeTab").css({"font-weight":"normal"});
         $("#contactText").slideDown();
+        $("#title").text("Contact");
         $(this).css({"font-weight":"bold"});
     });
 });
