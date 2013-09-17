@@ -2,7 +2,6 @@ div.box
 {
 width:83%;
 padding:10px 30px 10px 30px;
-border:5px solid gray;
 margin:auto;
 text-align:center;
 background-color:white;
@@ -14,11 +13,12 @@ div.tab
 {
 float: left;
 width:148px;
-border:5px solid gray;
-margin:12.5px;
+margin:17.5px;
+padding:5px 0px 5px 0px;
 text-align:center;
 background-color:white;
 font-family:"Ubuntu","Calibri","sans-serif";
+/*font-style:"Condensed";*/
 box-shadow: 2px 2px 2px rgba(0,0,0,.3);
 font-weight:normal;
 }
