@@ -7,35 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link rel=icon sizes="16x16 32x32 64x64 128x128 256x256" href="favicon.ico" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
-		<script>
-			$(document).ready(function(){
-			  $("#aboutTab").click(function(){
-				$("#homeText").hide();
-				//$("#homeTab").css({"text-decoration":"none"});
-				$("#homeTab").css({"font-weight":"normal"});
-				$("#aboutText").slideDown();
-				$("#contactText").hide();
-				$("#contactTab").css({"font-weight":"normal"});
-				$(this).css({"font-weight":"bold"});
-			  });
-			  $("#homeTab").click(function(){
-				$("#aboutText").hide();
-				$("#aboutTab").css({"font-weight":"normal"});
-				$("#homeText").slideDown();
-				$("#contactText").hide();
-				$("#contactTab").css({"font-weight":"normal"});
-				$(this).css({"font-weight":"bold"});
-			  });
-			  $("#contactTab").click(function(){
-				$("#aboutText").hide();
-				$("#aboutTab").css({"font-weight":"normal"});
-				$("#homeText").hide();
-				$("#homeTab").css({"font-weight":"normal"});
-				$("#contactText").slideDown();
-				$(this).css({"font-weight":"bold"});
-			  });
-			});
-</script>
+		<script src="tabs.js"> </script>
 	</head>
 	
 	<!--Body of the webpage-->

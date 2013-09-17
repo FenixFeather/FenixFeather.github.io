@@ -1,0 +1,27 @@
+$(document).ready(function(){
+    $("#aboutTab").click(function(){
+        $("#homeText").hide();
+        //$("#homeTab").css({"text-decoration":"none"});
+        $("#homeTab").css({"font-weight":"normal"});
+        $("#aboutText").slideDown();
+        $("#contactText").hide();
+        $("#contactTab").css({"font-weight":"normal"});
+        $(this).css({"font-weight":"bold"});
+        });
+    $("#homeTab").click(function(){
+        $("#aboutText").hide();
+        $("#aboutTab").css({"font-weight":"normal"});
+        $("#homeText").slideDown();
+        $("#contactText").hide();
+        $("#contactTab").css({"font-weight":"normal"});
+        $(this).css({"font-weight":"bold"});
+        });
+    $("#contactTab").click(function(){
+        $("#aboutText").hide();
+        $("#aboutTab").css({"font-weight":"normal"});
+        $("#homeText").hide();
+        $("#homeTab").css({"font-weight":"normal"});
+        $("#contactText").slideDown();
+        $(this).css({"font-weight":"bold"});
+    });
+});
