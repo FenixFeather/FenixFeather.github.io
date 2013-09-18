@@ -10,7 +10,8 @@ $(document).ready(function(){
         $(this).css({"font-weight":"bold"});
         $("#portraitMe").hide();
         $("#logo").hide();
-        });
+	});
+	
     $("#homeTab").click(function(){
         $("#aboutText").hide();
         $("#aboutTab").css({"font-weight":"normal"});
@@ -21,7 +22,8 @@ $(document).ready(function(){
         $(this).css({"font-weight":"bold"});
         $("#portraitMe").fadeIn();
         $("#logo").hide();
-        });
+	});
+	
     $("#contactTab").click(function(){
         $("#aboutText").hide();
         $("#aboutTab").css({"font-weight":"normal"});
@@ -33,4 +35,17 @@ $(document).ready(function(){
         $("#portraitMe").hide();
         $("#logo").fadeIn();
     });
+	
+	$(".icon").hover(function(){
+		$(this).addClass("shadowed");
+		},function(){
+		$(this).removeClass("shadowed");
+	});
+	
+	$(".tab").hover(function(){
+		$(this).css({"box-shadow": "4px 4px 4px rgba(0,0,0,.3)"});
+		},function(){
+		$(this).css({"box-shadow": "2px 2px 2px rgba(0,0,0,.3)"});
+	});
+  
 });
