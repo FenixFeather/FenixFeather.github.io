@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>final</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="final"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-05-09T11:41-0500"/>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">final</h1>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 Definitions</a></li>
+<li><a href="#sec-2">2 Proofs</a></li>
+<li><a href="#sec-3">3 Computations</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Definitions</h2>
+<div class="outline-text-2" id="text-1">
+
+<ul>
+<li><code>[X]</code> Triangular factorization A = LU
+</li>
+<li><code>[X]</code> Inverse of a matrix
+</li>
+<li><code>[&nbsp;]</code> Vector space (know all 8 properties in problem 5 of section 2.1)
+</li>
+<li><code>[X]</code> Subspace
+</li>
+<li><code>[X]</code> Column Space
+</li>
+<li><code>[X]</code> Null Space
+</li>
+<li><code>[X]</code> Echelon Form
+</li>
+<li><code>[X]</code> Reduced Row Echelon Form
+</li>
+<li><code>[X]</code> Linear dependence (and independence)
+</li>
+<li><code>[X]</code> Basis for a vector space
+</li>
+<li><code>[&nbsp;]</code> Linear transformation
+<ul>
+<li>A transformation is linear if 
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Orthogonal complement – The space of all vectors orthogonal to a subspace
+</li>
+<li><code>[X]</code> The three fundamental properties of determinants (1-3 in notes)
+<ul>
+<li><code>[X]</code> 1. Determinant of identity matrix is 1
+</li>
+<li><code>[X]</code> 2. Determinant changes signs when two rows are exchanged.
+</li>
+<li><code>[X]</code> 3. Determinant depends linearly on the first row.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Orthonormal basis – basis of orthogonal unit vectors
+</li>
+<li><code>[X]</code> Orthogonal matrix – columns are orthogonal to each other
+</li>
+<li><code>[&nbsp;]</code> Fourier series (infinite and discrete)
+</li>
+<li><code>[X]</code> Eigenvalue of a matrix
+</li>
+<li><code>[X]</code> Characteristic equation of a matrix
+</li>
+<li><code>[X]</code> Diagonalization of a matrix
+</li>
+<li><code>[&nbsp;]</code> Difference equation
+</li>
+<li><code>[X]</code> Stability of a difference equation
+</li>
+<li><code>[X]</code> Stability of differential equations
+</li>
+<li><code>[X]</code> Hermitian matrix
+</li>
+<li><code>[X]</code> Unitary matrix – A unitary matrix can be compared to a number on the unit circle.
+</li>
+<li><code>[X]</code> Similarity transformation
+<ul>
+<li>A and B are similar if \(B = M^{-1}AM\)
+</li>
+<li>Similarity is an equivalence relation, i.e. it is symmetric, transitive, and reflexive.
+</li>
+</ul>
+
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Proofs</h2>
+<div class="outline-text-2" id="text-2">
+
+<ul>
+<li><code>[&nbsp;]</code> The null space/column space of A is a subspace
+</li>
+<li><code>[&nbsp;]</code> Some given set of vectors is or is not a subspace.
+</li>
+<li><code>[&nbsp;]</code> A given V is a vector space
+</li>
+<li><code>[&nbsp;]</code> \((AB)^{-1} = B^{-1}A^{-1}\)
+</li>
+<li><code>[&nbsp;]</code> \((A^T)^{-1} = (A^{-1})^T\)
+</li>
+<li><code>[&nbsp;]</code> A set of mutually orthogonal nonzero vectors is linearly independent
+</li>
+<li><code>[&nbsp;]</code> Row space is orthogonal to the nullspace ofr a given matrix A
+</li>
+<li><code>[&nbsp;]</code> The Schwarz inequality
+</li>
+<li><code>[&nbsp;]</code> 7 properties of determinants
+</li>
+<li><code>[&nbsp;]</code> \(A^TA\) has the same nullspace as \(A\)
+</li>
+<li><code>[&nbsp;]</code> Statement 3N
+</li>
+<li><code>[&nbsp;]</code> If \(A = A^H\), then every eigenvalue is real
+</li>
+<li><code>[&nbsp;]</code> If U is a unitary matrix, then eigenvectors corresponding to different eigenvalues are orthonormal.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Computations</h2>
+<div class="outline-text-2" id="text-3">
+
+<ul>
+<li><code>[X]</code> Gaussian elimination (to an upper triangular or echelon matrix)
+</li>
+<li><code>[X]</code> Sums, scalar products, products of vectors and matrices where defined
+</li>
+<li><code>[X]</code> LU factorization of A
+<ul>
+<li>Lc = b
+</li>
+<li>Ux = c
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> RREF
+</li>
+<li><code>[X]</code> Gauss Jordan
+</li>
+<li><code>[X]</code> Provide a given elementary matrix
+</li>
+<li><code>[X]</code> Find a null space
+</li>
+<li><code>[&nbsp;]</code> Find a column space
+</li>
+<li><code>[X]</code> Find a complete solution (2.2)
+</li>
+<li><code>[&nbsp;]</code> Solve a system from LU decomp
+</li>
+<li><code>[&nbsp;]</code> Determine whether a set of vectors is linearly independent
+</li>
+<li><code>[&nbsp;]</code> Given a matrix A, find a basis for null space, column space, row space, left nullspace
+</li>
+<li><code>[&nbsp;]</code> Find dimensions for the four basic subspaces
+<ul>
+<li><code>[&nbsp;]</code> Null space: Dimension r
+</li>
+<li><code>[&nbsp;]</code> Column space: n - r
+</li>
+<li><code>[&nbsp;]</code> Row space: r
+</li>
+<li><code>[&nbsp;]</code> Left nullspace: m - r
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Determine the existence of a one sided inverse for a matrix A. Find it.
+</li>
+<li><code>[&nbsp;]</code> Move back and forth between a graph and an incidence matrix.
+</li>
+<li><code>[X]</code> Given a graph, find a spanning tree
+</li>
+<li><code>[&nbsp;]</code> Determine whether or not a transformation is linear; find the associated matrix
+</li>
+<li><code>[&nbsp;]</code> Write a vector in terms of a given basis
+</li>
+<li><code>[X]</code> Use the inner product to determine length and orthogonality
+</li>
+<li><code>[&nbsp;]</code> Find an angle between vectors
+</li>
+<li><code>[&nbsp;]</code> Find projection of a vector onto a line
+</li>
+<li><code>[&nbsp;]</code> Find a projection matrix
+</li>
+<li><code>[&nbsp;]</code> Least squares fitting of data
+<ul>
+<li>\( A^TA \hat{x} = A^Tb \)
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Finding a projection matrix
+<ul>
+<li>\(P = A(A^TA)^{-1}A^T\)
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> QR factorization
+<ul>
+<li>\( q_1^T \) across the top, with a, b, c. q2T second row with b, c. Etc.
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Gram-Schmidt
+<ul>
+<li>\(C = c - (q^T_1c)q_q- (q^T_2c)q_2\)
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Complex nth roots of unity
+<ul>
+<li>\( \cos(\frac{2 \pi}{n}) + i sin(\frac{2 \pi}{n}) \)
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Finding determinants using Determinant properties, cofactor expansion, Gaussian elim
+</li>
+<li><code>[X]</code> Inverses using determinants
+<ul>
+<li>Find determinant. Find cofactor matrix. Transpose cofactor matrix. Divide by det.
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Volume
+</li>
+<li><code>[X]</code> Cramer’s rule
+<ul>
+<li>Replace column whose variable you want to find with answer column
+</li>
+<li>Find determinant of this matrix. Divide by original determinant.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Eigenvalues and eigenvectors for a matrix
+</li>
+<li><code>[X]</code> Diagonalize a matrix
+</li>
+<li><code>[X]</code> Use diagonalization to compute powers of matrices
+</li>
+<li><code>[X]</code> Markov processes
+</li>
+<li><code>[X]</code> Determine stability of matrices for:
+<ul>
+<li><code>[X]</code> difference equations
+<ul>
+<li>Stable if all eigenvalues satisfy \(|\lambda _i| &lt; 1\)
+</li>
+<li>Neutrally stable if some = 1 and others &lt; 1
+</li>
+<li>Unstable if &gt; 1
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> differential equations
+<ul>
+<li>Stable if real part of eigenvalue satisfies \(Re(\lambda_i) &lt; 0\)
+</li>
+<li>Neutrally stable when \(Re(\lambda_1)=0\) and all \(Re(Re(\lambda_i)) \leq 0\)
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Find a closed form solution to a difference equation
+<ul>
+<li>\(u_k = S \Lambda ^k S^{-1} u_0\)
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Find a closed form to a differential equation
+<ul>
+<li>\(u(t) = Se^{\Lambda t}S^{-1}u(0)\)
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Compute lengths in the complex case
+<ul>
+<li>\(||x||^2 = \bar(x)^Tx\)
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Determine wehther a matrix is Hermitian
+<ul>
+<li>\(A^H = \bar{A}^T\)
+</li>
+<li>A matrix is Hermitian if \(A^H = A\)
+</li>
+</ul>
+
+</li>
+<li><code>[-]</code> Determine which categories a matrix belongs to
+<ul>
+<li><code>[X]</code> Diagonalizable – Independent eigenvectors
+</li>
+<li><code>[X]</code> Invertible – Nonzero eigenvectors
+</li>
+<li><code>[X]</code> Hermitian – It equals its hermitian
+</li>
+<li><code>[X]</code> Symmetric – it equals its transpose
+</li>
+<li><code>[&nbsp;]</code> Factorable into A = LU – invertible
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-05-09T11:41-0500</p>
+<p class="author">Author: </p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
