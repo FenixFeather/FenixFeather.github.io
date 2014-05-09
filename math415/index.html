@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="title" content="final"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2014-05-09T11:41-0500"/>
+<meta name="generated" content="2014-05-09T18:31-0500"/>
 <meta name="author" content=""/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -231,14 +231,37 @@ for the JavaScript code below.
 <li><code>[&nbsp;]</code> Vector space (know all 8 properties in problem 5 of section 2.1)
 </li>
 <li><code>[X]</code> Subspace
+<ul>
+<li>Multiplication and addition keep the vectors in the subspace
+</li>
+</ul>
+
 </li>
 <li><code>[X]</code> Column Space
 </li>
 <li><code>[X]</code> Null Space
 </li>
 <li><code>[X]</code> Echelon Form
+<ul>
+<li>Pivots are first nonzero entries in rows
+</li>
+<li>Below each pivot is a column of zeros, obtained by elimination
+</li>
+<li>Each pivot lies to the right of the pivot in the row above. This produces the staircase pattern, and zero rows come last.
+</li>
+</ul>
+
 </li>
 <li><code>[X]</code> Reduced Row Echelon Form
+<ul>
+<li>All pivots are 1s
+</li>
+<li>Every spot above and below a pivot is zero
+</li>
+<li>Each pivot lies to the right of the pivot above
+</li>
+</ul>
+
 </li>
 <li><code>[X]</code> Linear dependence (and independence)
 </li>
@@ -321,7 +344,7 @@ for the JavaScript code below.
 </li>
 <li><code>[&nbsp;]</code> Row space is orthogonal to the nullspace ofr a given matrix A
 </li>
-<li><code>[&nbsp;]</code> The Schwarz inequality
+<li><code>[X]</code> The Schwarz inequality
 </li>
 <li><code>[&nbsp;]</code> 7 properties of determinants
 </li>
@@ -329,9 +352,23 @@ for the JavaScript code below.
 </li>
 <li><code>[&nbsp;]</code> Statement 3N
 </li>
-<li><code>[&nbsp;]</code> If \(A = A^H\), then every eigenvalue is real
+<li><code>[X]</code> If \(A = A^H\), then every eigenvalue is real
+<ul>
+<li>Suppose \(Ax = \lambda x\)
+</li>
+<li>Then \(x^H Ax = \lambda x^H x\)
+</li>
+</ul>
+
 </li>
 <li><code>[&nbsp;]</code> If U is a unitary matrix, then eigenvectors corresponding to different eigenvalues are orthonormal.
+<ul>
+<li>Suppose \(Ux = \lambda_1 x\) and \(Uy = \lambda_2 y\)
+</li>
+<li>Then \(^H y = (Ux)^H (Uy) = (\lambda_1 x)^H(\lambda_2 y)\)
+</li>
+</ul>
+
 </li>
 </ul>
 
@@ -370,32 +407,44 @@ for the JavaScript code below.
 </li>
 <li><code>[X]</code> Find a complete solution (2.2)
 </li>
-<li><code>[&nbsp;]</code> Solve a system from LU decomp
+<li><code>[X]</code> Solve a system from LU decomp
 </li>
 <li><code>[&nbsp;]</code> Determine whether a set of vectors is linearly independent
 </li>
 <li><code>[&nbsp;]</code> Given a matrix A, find a basis for null space, column space, row space, left nullspace
 </li>
-<li><code>[&nbsp;]</code> Find dimensions for the four basic subspaces
+<li><code>[X]</code> Find dimensions for the four basic subspaces
 <ul>
-<li><code>[&nbsp;]</code> Null space: Dimension r
+<li><code>[X]</code> Column space: Dimension r
 </li>
-<li><code>[&nbsp;]</code> Column space: n - r
+<li><code>[X]</code> Null space: n - r
 </li>
-<li><code>[&nbsp;]</code> Row space: r
+<li><code>[X]</code> Row space: r
 </li>
-<li><code>[&nbsp;]</code> Left nullspace: m - r
+<li><code>[X]</code> Left nullspace: m - r
 </li>
 </ul>
 
 </li>
-<li><code>[&nbsp;]</code> Determine the existence of a one sided inverse for a matrix A. Find it.
+<li><code>[X]</code> Determine the existence of a one sided inverse for a matrix A. Find it.
+<ul>
+<li>Left inverse – \((A^TA)^{-1}A^T\)
+</li>
+<li>Right inverse – \(A^T(AA^T)^{-1}\)
+</li>
+</ul>
+
 </li>
 <li><code>[&nbsp;]</code> Move back and forth between a graph and an incidence matrix.
 </li>
 <li><code>[X]</code> Given a graph, find a spanning tree
 </li>
 <li><code>[&nbsp;]</code> Determine whether or not a transformation is linear; find the associated matrix
+<ul>
+<li>A transformation is linear if \(A(cx+dy) = c(Ax) + d(Ay)\)
+</li>
+</ul>
+
 </li>
 <li><code>[&nbsp;]</code> Write a vector in terms of a given basis
 </li>
@@ -404,6 +453,11 @@ for the JavaScript code below.
 <li><code>[&nbsp;]</code> Find an angle between vectors
 </li>
 <li><code>[&nbsp;]</code> Find projection of a vector onto a line
+<ul>
+<li>\(P = \frac{aa^T}{a^Ta}\)
+</li>
+</ul>
+
 </li>
 <li><code>[&nbsp;]</code> Find a projection matrix
 </li>
@@ -465,6 +519,11 @@ for the JavaScript code below.
 <li><code>[X]</code> Eigenvalues and eigenvectors for a matrix
 </li>
 <li><code>[X]</code> Diagonalize a matrix
+<ul>
+<li>\(A = S \Lambda S^{-1}\)
+</li>
+</ul>
+
 </li>
 <li><code>[X]</code> Use diagonalization to compute powers of matrices
 </li>
@@ -547,7 +606,7 @@ for the JavaScript code below.
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2014-05-09T11:41-0500</p>
+<p class="date">Date: 2014-05-09T18:31-0500</p>
 <p class="author">Author: </p>
 <p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
