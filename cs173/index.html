@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Final Review</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="Final Review"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2014-05-13 Tue"/>
+<meta name="author" content="Thomas Liu"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js">
+/**
+ *
+ * @source: http://orgmode.org/mathjax/MathJax.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ * Copyright (C) 2012-2013  MathJax
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in http://orgmode.org/mathjax/MathJax.js.
+ *
+ */
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code below.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code below is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code below.
+*/
+<!--/*--><![CDATA[/*><!--*/
+    MathJax.Hub.Config({
+        // Only one of the two following lines, depending on user settings
+        // First allows browser-native MathML display, second forces HTML/CSS
+        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
+                     "TeX/noUndefined.js"],
+        tex2jax: {
+            inlineMath: [ ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
+            skipTags: ["script","noscript","style","textarea","pre","code"],
+            ignoreClass: "tex2jax_ignore",
+            processEscapes: false,
+            processEnvironments: true,
+            preview: "TeX"
+        },
+        showProcessingMessages: true,
+        displayAlign: "center",
+        displayIndent: "2em",
+
+        "HTML-CSS": {
+             scale: 100,
+             availableFonts: ["STIX","TeX"],
+             preferredFont: "TeX",
+             webFont: "TeX",
+             imageFont: "TeX",
+             showMathMenu: true,
+        },
+        MMLorHTML: {
+             prefer: {
+                 MSIE:    "MML",
+                 Firefox: "MML",
+                 Opera:   "HTML",
+                 other:   "HTML"
+             }
+        }
+    });
+/*]]>*///-->
+</script>
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">Final Review</h1>
+
+<ul>
+<li><code>[X]</code> Big O
+<ul>
+<li><code>[X]</code> Define what it means for a function f to be asymptotically smaller than another function.
+<ul>
+<li>\(f(n) &lt;&lt; g(n)\) if and only if \(\lim_{n \rightarrow \infty}\frac{f(n)}{g(n)} = 0\)
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> For specific functions f and g, identify whether f is asymptotically smaller than g.
+<ul>
+<li>We only apply the above definition to straightforward functions.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Know the asymptotic relationships among key primitive funcitons: constant, log(n), n, nlogn, polynomials of higher orders, exponentials, factorial.
+<ul>
+<li>1 &lt;&lt; n &lt;&lt; n log n &lt;&lt; n<sup>2</sup> &lt;&lt; 2<sup>n</sup> &lt;&lt; n!
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Given functions f and g, prove that f is O(g)
+<ul>
+<li>f(n) is only O(g(n)) if and only if there are positive real numbers c and k such that \( 0 \leq f(n) \leq cg(n)\) for every \(n \geq k\)
+<ul>
+<li>Find numbers for this. Overkill is acceptable.x
+</li>
+</ul>
+
+</li>
+<li>If f(n) is O(g(n)) and g(n) is O(f(n)), then f is \(\Theta(n)\).
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Algorithms
+<ul>
+<li><code>[X]</code> Be familiar with the overall structure and Big O times of the following algorithms:
+<ul>
+<li><code>[X]</code> Merge two sorted lists – O(n)
+</li>
+<li><code>[X]</code> Binary search – O(logn)
+</li>
+<li><code>[X]</code> Mergesort – nlog(n)
+<ul>
+<li>T(n) = 2(T/2) + dn
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Graph reachability – O(n + m), breadth first search
+</li>
+<li><code>[X]</code> Tower of Hanoi Solver – 2<sup>n</sup>
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Know that Karatsuba’s algorithm divides a size n multiplication problem into 3 half-size sub=problems.
+<ul>
+<li><code>[X]</code> Running time is \(O(n^{\log_23})\), which is about \(O(n^{1.6})\)
+</li>
+<li><code>[X]</code> Better than dividing into 4 half size problems.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Analyze how long an algorithm takes using Big O notation.
+</li>
+<li><code>[X]</code> Given a recursive algorithm, express its Big O running time as a recursive definition.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Logic and proofs
+<ul>
+<li><code>[X]</code> Proof by contradiction
+<ul>
+<li>
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> NP
+<ul>
+<li><code>[X]</code> Know that certain classes of sentences have exponentially many parse trees
+<ul>
+<li>Each prepositional phrase has two possibilities.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Tower of Hanoi requires exponential times
+<ul>
+<li>Yep
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> NP is the set of problems for which we can justify yes answers
+<ul>
+<li>Parse trees is in EXP
+</li>
+<li>Problems for which we can give polynomial justifications for negative answers are in the set co-NP
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> There are problems in NP that can be solved in exponential time, but don’t have polynomial time algorithms
+</li>
+<li><code>[X]</code> Know examples of problems in NP
+<ul>
+<li>Graph colorability
+</li>
+<li>Circuit satisfiability
+</li>
+<li>Propositional logic satisfiability
+</li>
+<li>Marker making
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li><code>[-]</code> Collections of sets
+<ul>
+<li><code>[X]</code> Manipulate sets containing other sets
+</li>
+<li><code>[X]</code> Define and compute the power set P(A)
+</li>
+<li><code>[X]</code> Be able to read definitions for functions that return sets, domain is the power set
+</li>
+<li><code>[&nbsp;]</code> Define a partition of a set A. Determine wehther a specific set is a partition of some specific set A
+<ul>
+<li>A partition of a set A is a set of non-empty subsets of A
+</li>
+<li>None of the subsets overlap
+</li>
+<li>Covers all the sets
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Know that the equivalence classes of an equivalence relation form a partition
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Counting
+<ul>
+<li><code>[&nbsp;]</code> Know the shorthand notation for binomial coefficients and the formula for computing them
+<ul>
+<li>\(\binom{n}{k}\)
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Be able to solve practical counting problems involving combinations and combinations with repetition
+<ul>
+<li>The trick where you make lines and stuff.
+</li>
+<li>Logic
+</li>
+</ul>
+
+</li>
+<li><code>[&nbsp;]</code> Know the Binomial Theorem and Pascal’s Identity
+<ul>
+<li>Binomial Theorem: \( (x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k  \)
+</li>
+<li>Pascal’s Identity: \( \binom{n+1}{k} = \binom{n}{k} + \binom{n}{k - 1} \)
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> State Diagrams
+<ul>
+<li><code>[X]</code> Read notation fo state diagrams
+<ul>
+<li>Usually only one start state, but multiple end states are possible.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Trace walks in a state diagram
+</li>
+<li><code>[X]</code> Know the description of a translation function
+<ul>
+<li>\( \delta: S \times A \rightarrow \mathds{P}(S) \)
+</li>
+<li>Return \( \emptyset \) if there are no targets that use that state and action.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> General familiarity with common examples of state diagrams
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Counting states
+<ul>
+<li><code>[X]</code> Calculate the number of states for an example system
+</li>
+<li><code>[X]</code> Know that some examples involve an infinite number of states
+<ul>
+<li>Game of life
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Algorithms can be made more efficient by not creating multiple states with the same properties
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Representing functions
+<ul>
+<li><code>[X]</code> Funcitons can be represented mathematically or stored in a computer as list of input/output pairs.
+</li>
+<li><code>[X]</code> There is a more efficient way to store a function is to associate each input value with a location in a 1d array
+</li>
+<li><code>[X]</code> The transition function might be stored as a 2d array
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> Cardinality
+<ul>
+<li><code>[X]</code> Two sets have the same cardinality if there is a bijection
+</li>
+<li><code>[X]</code> Construct a bijection between two sets
+</li>
+<li><code>[X]</code> Define when \(|A| \leq |B|\)
+<ul>
+<li>There is a one to one function from A to B.
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> A countable set has the same cardinality as integers
+<ul>
+<li>Pairs of integers or natural numbers
+</li>
+<li>Rational numbers
+</li>
+<li>Set of finite length strings
+</li>
+<li>Set of all finite formulas or computer programs
+</li>
+</ul>
+
+</li>
+<li><code>[X]</code> A countable union of countable sets is countable
+</li>
+<li><code>[X]</code> For any set A, the power set of A has a larger cardinality than A
+</li>
+<li><code>[X]</code> Know that these are uncountable
+<ul>
+<li>The reals
+</li>
+<li>Interval of reals
+</li>
+<li>Power set of integers
+</li>
+<li>Set of all functions from integers to integers
+</li>
+<li>Functions that don’t have finite formulas and cannot be computed by any program
+</li>
+</ul>
+
+</li>
+</ul>
+
+</li>
+</ul>
+
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2014-05-13 Tue</p>
+<p class="author">Author: Thomas Liu</p>
+<p class="creator"><a href="http://orgmode.org">Org</a> version 7.9.3f with <a href="http://www.gnu.org/software/emacs/">Emacs</a> version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
