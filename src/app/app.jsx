@@ -10,6 +10,7 @@ import {List, ListItem} from 'material-ui/List';
 import ActionDescription from 'material-ui/svg-icons/action/description'
 import ActionBuild from 'material-ui/svg-icons/action/build'
 import ActionAccountBox from 'material-ui/svg-icons/action/account-box'
+import ContentMail from 'material-ui/svg-icons/content/mail'
 
 injectTapEventPlugin();
 
@@ -59,12 +60,7 @@ function handleActive(tab) {
 
 const ContactTab = () => (
     <div>
-	<CardText>
- 	    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- 	    Donec mattis pretium massa. Aliquam erat volutpat. Nulla facilisi.
- 	    Donec vulputate interdum sollicitudin. Nunc lacinia auctor quam sed pellentesque.
- 	    Aliquam dui mauris, mattis quis lacus id, pellentesque lobortis odio.
- 	</CardText>
+	<ListItem primaryText="tfliu2@illinois.edu" leftIcon={<ContentMail />} href="mailto:tfliu2@illinois.edu"/>
     </div>
 )
 
@@ -79,7 +75,7 @@ const NavTabs = () => (
 	<Tab label="Contact"
 	     data-route="/home"
 	     onActive={handleActive}>
-	    {/* <ContactTab/> */}
+	    <ContactTab/>
 	</Tab>
     </Tabs>
 );
