@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Ubuntu_R;
+  src: local(Ubuntu_R), url('fonts/Ubuntu-R.ttf') format('truetype');
+}
+
+div.box
+{
+width:83%;
+padding:10px 30px 30px 30px;
+margin:auto;
+text-align:center;
+background-color:white;
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+box-shadow: 8px 8px 8px rgba(0,0,0,.3);
+}
+
+div.tab
+{
+float: left;
+width:148px;
+margin:17.5px;
+padding:5px 0px 5px 0px;
+text-align:center;
+background-color:white;
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+/*font-style:"Condensed";*/
+box-shadow: 2px 2px 2px rgba(0,0,0,.3);
+font-weight:normal;
+}
+.last
+{
+margin:0;
+}
+
+div.container
+{
+margin:auto;
+}
+
+body
+{
+background-color:#4ca8ff;
+}
+
+h1
+{
+color:black;
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+text-align:center;
+margin-bottom:0px;
+}
+
+h2
+{
+color:black;
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+text-align:center;
+}
+
+h3
+{
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+text-align:left;
+font-size:24px;
+margin-bottom:-15px;
+}
+
+p
+{
+font-family:"Ubuntu","Ubuntu_R","Calibri","sans-serif";
+font-size:20px;
+text-align:left;
+}
+
+.icon
+{
+position:relative;
+left:128px;
+margin:25px;
+border:none;
+}
+
+.shadowed
+{
+-o-box-shadow:      0px 0px 15px #555;
+-icab-box-shadow:   0px 0px 15px #555;
+-khtml-box-shadow:  0px 0px 15px #555;
+-moz-box-shadow:    0px 0px 15px #555;
+-webkit-box-shadow: 0px 0px 15px #555;
+box-shadow:         0px 0px 15px #555;
+}
+
+.portrait
+{
+/*position:relative;
+right:100px;
+/*float:right;*/
+width:150px;
+margin: -20px 10px -20px 10px;
+}
+
+a:link {color:#000000;}    /* unvisited link */
+a:visited {color:#000000;} /* visited link */
+a:focus {outline: none;}
