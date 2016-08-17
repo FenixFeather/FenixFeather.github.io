@@ -7,7 +7,9 @@ import AppBar from 'material-ui/AppBar';
 import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 import {Tabs, Tab} from 'material-ui/Tabs';
 import {List, ListItem} from 'material-ui/List';
-import ContentInbox from 'material-ui/svg-icons/content/inbox';
+import ActionDescription from 'material-ui/svg-icons/action/description'
+import ActionBuild from 'material-ui/svg-icons/action/build'
+import ActionAccountBox from 'material-ui/svg-icons/action/account-box'
 
 injectTapEventPlugin();
 
@@ -39,7 +41,9 @@ const HomeTab = () => (
 
 const InfoList = () => (
     <List>
-	<ListItem primaryText="Inbox" leftIcon={<ContentInbox />} />
+	<ListItem primaryText="Resume" leftIcon={<ActionDescription />} href="https://github.com/FenixFeather"/>
+	<ListItem primaryText="Github" leftIcon={<ActionBuild />} href="https://github.com/FenixFeather"/>
+	<ListItem primaryText="LinkedIn" leftIcon={<ActionAccountBox />} href="http://www.linkedin.com/pub/thomas-liu/80/819/618"/>
     </List>
 )
 
@@ -48,6 +52,10 @@ const AboutTab = () => (
 	<InfoList />
     </div>
 )
+
+function handleActive(tab) {
+    window.location.href = "mailto:tfliu2@illinois.edu";
+}
 
 const ContactTab = () => (
     <div>
@@ -68,8 +76,10 @@ const NavTabs = () => (
 	<Tab label="About" >
 	    <AboutTab/>
 	</Tab>
-	<Tab label="Contact" >
-	    <ContactTab/>
+	<Tab label="Contact"
+	     data-route="/home"
+	     onActive={handleActive}>
+	    {/* <ContactTab/> */}
 	</Tab>
     </Tabs>
 );
