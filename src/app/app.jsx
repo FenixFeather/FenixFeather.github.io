@@ -20,16 +20,30 @@ const styles = {
 	marginLeft: "35%",
 	marginRight: "35%",
 	marginTop: "10%"
-    }
+    },
+    containerMobile: {
+        textAlign: 'center',
+	margin: 0
+    }   
 };
 
-const MainCard = () => (
-    <div style={styles.container}>
- 	<Card>
-	    <NavTabs />
- 	</Card>
-    </div>
-);
+var MainCard = React.createClass({
+    render: function() {
+	var s = styles.container;
+	
+	if (window.matchMedia("only screen and (max-width: 760px)").matches) {
+	    s = styles.containerMobile;
+	}
+	
+	return (
+	    <div style={s}>
+ 		<Card>
+		    <NavTabs />
+ 		</Card>
+	    </div>
+	);
+    }
+});
 
 const HomeTab = () => (
     <div>
