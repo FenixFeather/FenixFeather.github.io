@@ -42,7 +42,7 @@ const HomeTab = () => (
 
 const InfoList = () => (
     <List>
-	<ListItem primaryText="Resume" leftIcon={<ActionDescription />} href="https://github.com/FenixFeather"/>
+	<ListItem primaryText="Resume" leftIcon={<ActionDescription />} href="https://github.com/FenixFeather/resume/releases" />
 	<ListItem primaryText="Github" leftIcon={<ActionBuild />} href="https://github.com/FenixFeather"/>
 	<ListItem primaryText="LinkedIn" leftIcon={<ActionAccountBox />} href="http://www.linkedin.com/pub/thomas-liu/80/819/618"/>
     </List>
