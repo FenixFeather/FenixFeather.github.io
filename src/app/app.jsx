@@ -24,7 +24,10 @@ const styles = {
     containerMobile: {
         textAlign: 'center',
 	margin: 0
-    }   
+    },
+    list: {
+	padding: "0px 0px"
+    }
 };
 
 var MainCard = React.createClass({
@@ -49,14 +52,14 @@ const HomeTab = () => (
     <div>
 	<CardTitle title="Welcome to my website!"/>
 	<CardText>
- 	    Hi. I'm Thomas Liu, a senior at University of Illinois @ Urbana-Champaign pursuing an MS-BS degree in Computer Science.
+ 	    Hi. I'm Thomas Liu, a graduate student at University of Illinois @ Urbana-Champaign pursuing an MS-BS degree in Computer Science.
  	</CardText>
     </div>
 )
 
 const InfoList = () => (
-    <List>
-	<ListItem primaryText="Resume" leftIcon={<ActionDescription />} href="https://github.com/FenixFeather/resume/releases" />
+    <List style={styles.list}>
+	<ListItem primaryText="Resume" leftIcon={<ActionDescription />} href="/thomas_liu_resume.pdf"/>
 	<ListItem primaryText="Github" leftIcon={<ActionBuild />} href="https://github.com/FenixFeather"/>
 	<ListItem primaryText="LinkedIn" leftIcon={<ActionAccountBox />} href="http://www.linkedin.com/pub/thomas-liu/80/819/618"/>
     </List>
